@@ -1,0 +1,10 @@
+mainmenu "Blinky Configuration"
+
+config APP_HEARTBEAT_PERIOD_MS
+    int "Heartbeat LED Period (ms)"
+    default 500
+    range 100 2000
+    help
+      Sets the sleep duration for the heartbeat LED.
+
+source "Kconfig.zephyr"
