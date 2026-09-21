@@ -1,0 +1,6 @@
+board:
+  name: our_board
+  full_name: Our Custom Board
+  vendor: others
+  socs:
+    - name: esp32
