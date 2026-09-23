@@ -1,0 +1,7 @@
+/ {
+    our_sensor: our_sensor_node {
+        compatible = "our,driver";
+        led-gpios = <&gpio0 2 GPIO_ACTIVE_HIGH>;
+        status = "okay";
+    };
+};

@@ -1,0 +1,5 @@
+mainmenu "Custom Driver Application"
+
+rsource "drivers/our_driver/Kconfig"
+
+source "Kconfig.zephyr"

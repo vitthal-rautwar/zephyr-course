@@ -1,0 +1,11 @@
+description: Custom LED Sensor Driver
+
+compatible: "our,driver"
+
+include: [sensor-device.yaml, base.yaml]
+
+properties:
+  led-gpios:
+    type: phandle-array
+    required: true
+    description: GPIO pin connected to the LED
