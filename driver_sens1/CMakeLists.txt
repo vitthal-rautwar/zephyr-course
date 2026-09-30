@@ -4,8 +4,8 @@ list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(driver_sens1)
-
 target_sources(app PRIVATE 
     src/main.c
     drivers/our_driver/our_driver.c
 )
+target_sources_ifdef(CONFIG_SHELL app PRIVATE drivers/our_driver/driver_shell.c)
